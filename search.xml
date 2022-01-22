@@ -29,6 +29,8 @@
             
             <tag> 密码学 </tag>
             
+            <tag> 课程报告 </tag>
+            
         </tags>
       
     </entry>
@@ -50,6 +52,8 @@
             
             <tag> Python </tag>
             
+            <tag> 网络安全A </tag>
+            
         </tags>
       
     </entry>
@@ -68,6 +72,8 @@
         <tags>
             
             <tag> 密码学 </tag>
+            
+            <tag> 课程作业 </tag>
             
         </tags>
       
@@ -108,6 +114,10 @@
         <tags>
             
             <tag> CTF </tag>
+            
+            <tag> Web </tag>
+            
+            <tag> Misc </tag>
             
         </tags>
       

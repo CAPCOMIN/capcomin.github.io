@@ -11,16 +11,7 @@
   </url>
   
   <url>
-    <loc>https://zxy.link/posts/2f9013ea/</loc>
-    
-    <lastmod>2022-01-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zxy.link/posts/4a17b156/</loc>
+    <loc>https://zxy.link/posts/dae2f53a/</loc>
     
     <lastmod>2022-01-22</lastmod>
     
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://zxy.link/posts/dae2f53a/</loc>
+    <loc>https://zxy.link/posts/7b9d3851/</loc>
     
     <lastmod>2022-01-22</lastmod>
     
@@ -47,7 +38,16 @@
   </url>
   
   <url>
-    <loc>https://zxy.link/posts/7b9d3851/</loc>
+    <loc>https://zxy.link/posts/2f9013ea/</loc>
+    
+    <lastmod>2022-01-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/posts/4a17b156/</loc>
     
     <lastmod>2022-01-22</lastmod>
     
@@ -130,6 +130,34 @@
   
   <url>
     <loc>https://zxy.link/tags/Python/</loc>
+    <lastmod>2022-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/tags/Web/</loc>
+    <lastmod>2022-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/tags/Misc/</loc>
+    <lastmod>2022-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8A/</loc>
+    <lastmod>2022-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/tags/%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A/</loc>
     <lastmod>2022-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
