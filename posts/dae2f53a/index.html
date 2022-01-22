@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CUMTCTF-2021秋季赛部分题解 | Capcomin's blogs</title><meta name="keywords" content="CTF"><meta name="author" content="Capcomin"><meta name="copyright" content="Capcomin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Webssti经过多次尝试发现request被禁用，于是构造payload直接给不同变量赋值，拼接成最后的file&#x3D;&#39;&#x2F;flag&#39;命令。这里直接放payload： 12345678910&amp;#123;% set po&#x3D;dict(po&#x3D;a,p&#x3D;a)|join%&amp;#125;&amp;#123;% set a&#x3D;(()|select|string|list)|attr(po)(24)%&amp;#125;&amp;">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CUMTCTF-2021秋季赛部分题解 | Capcomin's blogs</title><meta name="keywords" content="CTF"><meta name="author" content="Capcomin"><meta name="copyright" content="Capcomin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Webssti经过多次尝试发现request被禁用，于是构造payload直接给不同变量赋值，拼接成最后的file&#x3D;&#39;&#x2F;flag&#39;命令。这里直接放payload： 12345678910&amp;#123;% set po&#x3D;dict(po&#x3D;a,p&#x3D;a)|join%&amp;#125;&amp;#123;% set a&#x3D;(()|select|string|list)|attr(po)(24)%&amp;#125;&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CUMTCTF-2021秋季赛部分题解">
 <meta property="og:url" content="https://zxy.link/posts/dae2f53a/index.html">
@@ -124,8 +124,27 @@
       }
       const t = saveToLocal.get('theme')
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
