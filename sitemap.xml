@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zxy.link/posts/8aab642a/</loc>
+    
+    <lastmod>2022-01-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zxy.link/posts/2f9013ea/</loc>
     
     <lastmod>2022-01-22</lastmod>
@@ -92,14 +101,7 @@
 
   
   <url>
-    <loc>https://zxy.link/tags/Java/</loc>
-    <lastmod>2022-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zxy.link/tags/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/</loc>
+    <loc>https://zxy.link/tags/CTF/</loc>
     <lastmod>2022-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -113,7 +115,21 @@
   </url>
   
   <url>
-    <loc>https://zxy.link/tags/CTF/</loc>
+    <loc>https://zxy.link/tags/Python/</loc>
+    <lastmod>2022-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/tags/%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/</loc>
+    <lastmod>2022-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zxy.link/tags/Java/</loc>
     <lastmod>2022-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
